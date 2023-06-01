@@ -21,11 +21,6 @@ public class SecurityService {
         return authenticationContext.getAuthenticatedUser(UserDetails.class).get();
     }
 
-    @Bean
-    public PasswordEncoder getPasswordEncoder() {
-
-        return new BCryptPasswordEncoder();
-    }
     public void logout() {
         authenticationContext.logout();
     }

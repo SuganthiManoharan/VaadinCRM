@@ -42,6 +42,12 @@ public class SecurityConfig extends VaadinWebSecurity { // <2>
         return authManager;
     }
 
+    @Bean
+    public PasswordEncoder getPasswordEncoder() {
+
+        return new BCryptPasswordEncoder();
+    }
+
 
 
 }
