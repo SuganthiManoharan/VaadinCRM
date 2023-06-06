@@ -21,7 +21,7 @@ COPY --chown=myuser:myuser frontend frontend
 RUN mvn clean package -DskipTests -Pproduction
 
 # Running stage: the part that is used for running the application
-FROM openjdk:16-jdk-slim
+FROM maven:3.8.1-openjdk-17-slim
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get update -qq && apt-get install -qq --no-install-recommends nodejs
 
