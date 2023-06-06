@@ -7,7 +7,7 @@ This repository contains the source code for the [Building Modern Web Applicatio
 ## Branches
 
 - The main branch contains the source code for the latest Vaadin release
-- The `v14` branch contains the source code for Vaadin 14
+- The `v14` branch contains the source code for Vaadin 24
 
 
 ## Text tutorial
