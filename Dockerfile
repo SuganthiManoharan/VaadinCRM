@@ -17,7 +17,7 @@ RUN mvn dependency:go-offline -Pproduction
 COPY --chown=myuser:myuser src src
 COPY --chown=myuser:myuser frontend frontend
 
-# Build the production package, assuming that we validated the version before so no need for running tests again
+# Build the production package, assuming that we validated the version before so no need for running tests again.
 RUN mvn clean package -DskipTests -Pproduction
 
 # Running stage: the part that is used for running the application
